@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_e8e8e8"
+   >
+
+
+    <LinearLayout
+        android:background="@android:color/white"
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="?android:actionBarSize"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <com.pasc.lib.widget.toolbar.ClearEditText
+            android:id="@+id/et_search"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="32dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:textCursorDrawable="@drawable/emergency_edit_text_bg"
+            android:background="@drawable/emergency_bg_search"
+            android:drawableLeft="@drawable/emergency_ic_search"
+            android:drawablePadding="@dimen/dp_4"
+            android:gravity="left|center_vertical"
+            android:hint="搜索地点"
+            android:paddingEnd="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingStart="10dp"
+            android:textColor="@color/black_333333"
+            android:textColorHint="@color/gray_c7c7c7"
+            android:textSize="@dimen/text_size_14"
+            android:imeOptions="actionSearch"
+            android:singleLine="true"
+            />
+        <TextView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginRight="13dp"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/theme_color"
+            android:textSize="@dimen/text_size_15"
+             />
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    </android.support.v4.widget.SwipeRefreshLayout>
+        <TextView
+            android:id="@+id/tv_result"
+            android:visibility="gone"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_24"
+            android:textColor="#666666"
+            android:text="无结果"
+            android:textSize="@dimen/text_size_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

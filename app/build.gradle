@@ -1,0 +1,97 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion COMPILE_SDK_VERSION
+    buildToolsVersion BUILD_TOOLS_VERSION
+
+    defaultConfig {
+        applicationId "com.pingan.smt.template"
+        minSdkVersion MIN_SDK_VERSION
+        targetSdkVersion TARGET_SDK_VERSION
+        versionCode VERSION_CODE
+        versionName VERSION_NAME
+        multiDexEnabled true
+        ndk {
+            abiFilter "armeabi-v7a"
+        }
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                // 数据库与路由的配置
+                arguments = [targetModuleName: project.getName(), AROUTER_MODULE_NAME: project.getName()]
+            }
+        }
+    }
+
+    //各个项目在这里设置app到签名信息，各个项目自己生成自己到签名信息，替换基线给到签名信息，签名密码不能太简单，尽量复杂
+    signingConfigs {
+        release {
+            storeFile file('smt.jks')
+            storePassword "pingan@smt"
+            keyAlias "smt"
+            keyPassword "pingan@smt"
+            v1SigningEnabled true
+            v2SigningEnabled true
+
+            // 微信支付签名
+//            keyAlias 'smcc'
+//            keyPassword 'smcc2018'
+//            storeFile file('../smcc.jks')
+//            storePassword '123456'
+//            v1SigningEnabled true
+//            v2SigningEnabled true
+
+
+        }
+        debug {
+            storeFile file('smt.jks')
+            storePassword "pingan@smt"
+            keyAlias "smt"
+            keyPassword "pingan@smt"
+            v1SigningEnabled true
+            v2SigningEnabled true
+
+            // 微信支付包名
+//            keyAlias 'smcc'
+//            keyPassword 'smcc2018'
+//            storeFile file('../smcc.jks')
+//            storePassword '123456'
+//            v1SigningEnabled true
+//            v2SigningEnabled true
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    flavorDimensions 'packageType'
+    productFlavors {
+        product {
+            buildConfigField "boolean", "PRODUCT_MODE", "true"
+            dimension 'packageType'
+        }
+
+        beta {
+            buildConfigField "boolean", "PRODUCT_MODE", "false"
+            dimension 'packageType'
+        }
+    }
+}
+
+dependencies {
+    api fileTree(dir: 'libs', include: ['*.jar'])
+    api 'com.android.support:appcompat-v7:27.1.1'
+//    if (isMavenBuild == 'false') {
+        api project(':BusinessEmergency')
+//    } else {
+//        api "com.pasc.business:emrgency:${rootProject.ext.aarBusinessEmrgencyVersion}"
+//    }
+}

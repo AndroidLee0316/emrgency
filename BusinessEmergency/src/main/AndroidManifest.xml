@@ -1,0 +1,9 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pasc.business" >
+
+    <application>
+        <activity android:name=".emrgency.EmrgencyActivity" />
+        <activity android:name=".emrgency.location.activity.LocationActivity" />
+        <activity android:name=".emrgency.location.activity.PoiSearchActivity" />
+    </application>
+</manifest>

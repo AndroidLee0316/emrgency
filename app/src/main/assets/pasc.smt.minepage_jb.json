@@ -1,0 +1,127 @@
+[
+  {
+    "type": "container-oneColumn",
+    "items": [
+      {
+        "id": "personal_header",
+        "type": "component-personalHeader",
+        "pageHeight": 150,
+        "bgUrl": "res://business_mine_bg_personal_center_jb",
+        "loginDesc": "欢迎登录市民通基线版",
+        "nameColor": "#333333",
+        "loginDescColor": "#333333",
+        "authBtn": {
+          "desc": "未实名认证，立即认证",
+          "desc2": "已实名认证",
+          "drawableRight": "res://ic_to_auth_arrow",
+          "bgUrl": "res://business_mine_bg_auth_btn_no",
+          "textColor": "#017AF9"
+        },
+        "creditBtn": {
+          "desc": "个人信用",
+          "drawableRight": "res://ic_to_auth_arrow",
+          "bgUrl": "res://business_mine_bg_auth_btn_no",
+          "textColor": "#017AF9",
+          "isHidden": true
+        }
+      }
+    ]
+  },
+  {
+    "type": "container-oneColumn",
+    "items": [
+      {
+        "type": "component-horizontalDivider",
+        "pageHeight": 6,
+        "bgColor": "#f4f4f4"
+      }
+    ]
+  },
+  {
+    "type": "container-oneColumn",
+    "items": [
+      {
+        "type": "component-mineCardHeader",
+        "title": "企业授权",
+        "showArrow": true,
+        "isNeedLogin": true,
+        "textStyle": "bold",
+        "showBottomDivider": true,
+        "arrowUrl": "res://business_mine_ic_user_head_arrow",
+        "desc": "",
+        "onClick": "event://GoToMyCard",
+        "onClickEventId": "wd",
+        "onClickEventParams": {
+          "服务名称": "我的卡包"
+        }
+      }
+    ]
+  },
+  {
+    "type": "container-oneColumn",
+    "items": [
+      {
+        "type": "container-myCard",
+        "id": "personal_my_card",
+        "pageWidth": 300,
+        "pageHeight": 130,
+        "hGap": 3,
+        "scrollMarginLeft": 9,
+        "scrollMarginRight": 9,
+        "scrollMarginBottom": 12,
+        "hasIndicator": false,
+        "itemRatio": 2.307,
+        "tag": "jb"
+      }
+    ]
+  },
+  {
+    "type": "container-oneColumn",
+    "items": [
+      {
+        "type": "component-horizontalDivider",
+        "pageHeight": 6,
+        "bgColor": "#f4f4f4"
+      }
+    ]
+  },
+  {
+    "type": "container-oneColumn",
+    "items": [
+      {
+        "type": "component-settingItem",
+        "title": "推荐平安江北",
+        "desc": "",
+        "iconUrl": "res://ic_jiangbei_recommand",
+        "iconWidth": 22,
+        "iconHeight": 22,
+        "showBottomDivider": true,
+        "isNeedLogin": true,
+        "onClick": "https://smt-stg.pingan.com.cn/changshu/app/feature/recommend/#/qrcode",
+        "onClickEventId": "wd",
+        "onClickEventParams": {
+          "服务名称": "推荐平安江北"
+        }
+      }
+    ]
+  },
+  {
+    "type": "container-oneColumn",
+    "items": [
+      {
+        "type": "component-settingItem",
+        "title": "去好评",
+        "desc": "",
+        "iconUrl": "res://ic_goto_comment",
+        "iconWidth": 22,
+        "iconHeight": 22,
+        "showBottomDivider": true,
+        "onClick": "event://GoToPraise",
+        "onClickEventId": "wd",
+        "onClickEventParams": {
+          "服务名称": "去好评"
+        }
+      }
+    ]
+  }
+]

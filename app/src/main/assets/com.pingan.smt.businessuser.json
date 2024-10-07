@@ -1,0 +1,60 @@
+{
+  "faceConfig": {
+    "detail": {
+      "detail": "人脸",
+      "detail_needInit": "是否需要初始化, 0:不需要，1:需要",
+      "detail_FACE_COMPARE": "认证对比",
+      "detail_FACE_COMPARISON": "人脸对比（对比当前人脸 和 实名认证的人脸是否匹配）",
+      "detail_faceComparisonUrl": "人脸登录",
+      "detail_openFaceCertificationLoginUrl": "人脸实名认证之后开通或者覆盖人脸",
+      "detail_FACE_REGISTER": "注册人脸",
+      "detial_verifyOpenFaceUrl": "人脸开通验证码校验",
+      "detail_resetFaceUrl": "重置人脸",
+      "detail_getOpenfaceStateByMobile": "根据手机号获取人脸",
+      "detail_registerFaceUrl": "注册人脸"
+    },
+    "needInit": "1",
+    "faceAndIdComparisonUrl": "/api/platform/face/faceAndIdComparison",
+    "upgradeToFaceAndIdComparisonUrl": "/api/platform/face/upgradeToFaceAndIdComparison",
+    "faceComparisonUrl": "/api/platform/pinganFace/faceComparison",
+    "openFaceCertificationLoginUrl": "/api/platform/pinganFace/openFaceCertificationLogin",
+    "FACE_REGISTER": "/api/platform/pinganFace/registerFace",
+    "verifyOpenFaceUrl": "/api/platform/user/verifyOpenFace",
+    "resetFaceUrl": "/api/platform/pinganFace/resetFace",
+    "getOpenfaceStateByMobileUrl": "/api/platform/pinganFace/getOpenfaceStateByMobile",
+    "registerFaceUrl": "/api/platform/pinganFace/registerFace",
+    "updateOpenFaceUrl": "/api/platform/pinganFace/updateOpenFace"
+  },
+  "certificationConfig": {
+    "detail": {
+      "detail": "认证",
+      "detail_needInit": "是否需要初始化, 0:不需要，1:需要",
+      "detail_CERTIFICATION_NUMBER": "人脸校验识别次数",
+      "detail_sendVerifyCodeUrl": "实名认证发送短信验证码",
+      "detail_byBankUrl": "银行卡实名认证（认证接口）",
+      "detail_confirmByBankUrl": "银行卡实名认证(接口二)",
+      "detail_queryAuthCountUrl": "查询认证次数是否超过最大允许次数",
+      "detail_queryIsCertedUrl": "查询该身份信息是否被其他用户认证过"
+    },
+    "needInit": "1",
+    "byBankUrl": "/api/platform/byBank",
+    "sendVerifyCodeUrl": "/api/platform/user/sendVerifyCode",
+    "confirmByBankUrl": "/api/platform/confirmByBank",
+    "queryAuthCountUrl": "/api/platform/cert/queryAuthCount",
+    "queryIsCertedUrl": "/api/platform/cert/queryIsCerted"
+  },
+  "loginConfig": {
+    "detail": {
+      "detail": "登录",
+      "detail_needInit": "是否需要初始化, 0:不需要，1:需要",
+      "detail_SEND_VERIFY_CODE": "发送验证码",
+      "detail_OTP_LOGIN": "OTP登录",
+      "detail_IS_OPEN_FACE": "根据手机号获取用户信息",
+      "detail_LOGIN_BY_TOKEN": "临时token登陆"
+    },
+    "needInit": "1",
+    "sendVerifyCodeUrl": "/api/platform/user/sendVerifyCode",
+    "mobileLoginUrl": "/api/platform/user/mobileLogin",
+    "loginByAuthorizationCode": "/api/platform/env/loginByShortToken"
+  }
+}

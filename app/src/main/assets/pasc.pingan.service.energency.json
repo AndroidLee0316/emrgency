@@ -1,0 +1,38 @@
+{
+  "emergency": {
+    "name": "一键报警",
+    "enable": true,
+    "callThePolice": true,
+    "callThePoliceBySms": true
+  },
+  "nearbyLife": {
+    "name": "附近生活",
+    "enable": true,
+    "store": false,
+    "publicWashroom": false,
+    "bank": false,
+    "atm": false,
+    "chargingPile": false,
+    "photoStudio": false,
+    "gasStation": false,
+    "carCarePoint": false,
+    "pharmacy": false,
+    "ticketSales": false,
+    "socialWelfareInstitute": false,
+    "postOffice": false,
+    "museum": false,
+    "designatedDriver": false
+  },
+  "displayAds": {
+    "name": "广告展示",
+    "enable": false
+  },
+  "weather": {
+    "name": "天气组件",
+    "enable": true,
+    "predictionOf24Hours": true,
+    "predictionOf7Days": true,
+    "indexOfLiving": true,
+    "indexOfOthers": true
+  }
+}

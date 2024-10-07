@@ -1,0 +1,170 @@
+{
+  "paAccountPassConfig": {
+    "detail": {
+      "detail": "平安一账通配置(H5)",
+      "detail_needInit": "是否需要初始化, 0:不需要，1:需要",
+      "detail_toolBarColor": "标题栏颜色",
+      "detail_toolBarVisibility": "h5界面是否显示标题栏, 0:GONE, 1:VISIBLE",
+      "detail_statusBarColor": "状态栏颜色",
+      "detail_statusBarVisibility": "h5界面是否显示状态栏, 0:GONE, 1:VISIBLE, 2:FOLLOWING",
+      "detail_diagnose": "智能自诊",
+      "detail_drugsAssistant": "药品助手",
+      "detail_diseaseAssistant": "疾病助手"
+    },
+    "needInit": "1",
+    "diagnoseProduct": "https://city.pingan.com.cn/static/public/health-app/healthdiagnose/index.html",
+    "diagnoseBeta": "https://test1-city.pingan.com.cn/static/public/health-app/healthdiagnose/index.html",
+    "drugsAssistantProduct": "https://city.pingan.com.cn/static/public/health-app/medical/index.html",
+    "drugsAssistantBeta": "https://test-mhis-siapp.pingan.com.cn/static/public/health-app/medical/index.html",
+    "diseaseAssistantProduct": "https://test-mhis-siapp.pingan.com.cn/static/public/health-app/disease/index.html",
+    "diseaseAssistantBeta": "https://test-mhis-siapp.pingan.com.cn/static/public/health-app/disease/index.html",
+    "statusBarColor": "#4b89dc",
+    "statusBarVisibility": "0",
+    "toolBarColor": "#4b89dc",
+    "toolBarVisibility": "0"
+  },
+  "paSafeHouseConfig": {
+    "detail": {
+      "detail": "平安好房(H5)",
+      "detail_needInit": "是否需要初始化, 0:不需要，1:需要",
+      "detail_toolBarColor": "标题栏颜色",
+      "detail_toolBarVisibility": "h5界面是否显示标题栏, 0:GONE, 1:VISIBLE",
+      "detail_statusBarColor": "状态栏颜色",
+      "detail_statusBarVisibility": "h5界面是否显示状态栏, 0:GONE, 1:VISIBLE, 2:FOLLOWING",
+      "detail_newHouseUrl": "新房",
+      "detail_fangDaiUrl": "房贷计算器"
+    },
+    "needInit": "1",
+    "newHouseUrl": "https://xf.m.pinganfang.com/nantong?hfcmpn=602",
+    "fangDaiUrl": "https://m.pinganfang.com/tools/fangdai.html?hfcmpn=602",
+    "statusBarColor": "#4b89dc",
+    "statusBarVisibility": "0",
+    "toolBarColor": "#4b89dc",
+    "toolBarVisibility": "0"
+  },
+  "pafConfig": {
+    "detial": {
+      "detail": "平安壹钱包(H5)",
+      "detail_needInit": "是否需要初始化, 0:不需要，1:需要",
+      "detail_toolBarColor": "标题栏颜色",
+      "detail_toolBarVisibility": "h5界面是否显示标题栏, 0:GONE, 1:VISIBLE",
+      "detail_statusBarColor": "状态栏颜色",
+      "detail_statusBarVisibility": "h5界面是否显示状态栏, 0:GONE, 1:VISIBLE, 2:FOLLOWING",
+      "detail_MERCHANT_CRYPT_KEY": "",
+      "detail_MERCHANT_NO": "",
+      "detail_PRODUCT_ID": "插件框ID（产品编号）",
+      "detail_CITY_ID": "平安付提供对城市ID",
+      "detail_CITY_NAME": "城市名称",
+      "detail_WX_APP_ID": "微信ID（微信支付用到，暂未支持）",
+      "detail_APP_ID": "商户应用ID 由平安付分配",
+      "detail_FRONT_TEXT": "跟后端  ios 统一约定的拼接前置字符串",
+      "degail_pafType": "水费/电费/话费/燃气费/流量/油费/所有"
+    },
+    "needInit": "1",
+    "MERCHANT_CRYPT_KEY": "MIICdwIBADANBgkqhkiG9w0BAQEFAASCAmEwggJdAgEAAoGBANK9sv+CooFsluLY0tEMfb5IGhpAnyYprGCpUj4Z50cRvviLxwCQbqKUHGrj81DPguDJA0sNHb/9EdM5tu+L0Ah4EjeCItP/ylrr1nxNU5Xp4vMjxl3cyw9QoKHDNkRaOo4H6oQPhtw6LuPhuYfQjXMDHvS3eGeGmgA8B3h8DhmFAgMBAAECgYAlLpklYbwgT7NzhMP1ZFnPN9N7LEmoJxQl3doH4PQgYu4p1iefXtxWTQGSjnOAn4w88tpk5ISKOjFp7jXrn+RtN8S3b1p+MaPk1UbxEzmlyTbyuuDO55tsJcfEpRwQfgn0xPX/isRm7JbwrXh2kblR8rDSpJMYfT0t+5X/ORfUpQJBAP90he4UCzeNYrYkKt9QIUhu3PyZUGjUw+5vTNd6vB0iqvoS3d65IQ/1aFiHMH4NMYwOuVh+Vypa/tlduCril7MCQQDTMMMtgkCTlpot3TeAJuabuaZ8HRg/dj6awt4wXycLKJtHhWlg3rJl2XUP5AhS9+fBWMakbzmkrAm3D0P1AG3nAkEA6tfbnECPA1YWbm4Xf86xml5ZCFuFwaoAKf3mPZ5Wu844MsgPcobtLzej4ub9nJRSfXi3yfPz/DtFWN1AxyQi4wJBAMHTGw6FYKcTrWUyhmGDUlrRxE5clYiJCWQYPLvAWKERH5JAizpwqOJ49csjyc/73iPBSm5X9lt/2Vq9E+2j+zkCQA8gP8ToT1t3amjGHQ4pUZ+plEpmE5U1gN+IwMf5pTibMj89MUEiR2bcSKlIKN0r/w6vqOkaMVN2gOHukcXJeio=",
+    "MERCHANT_NO": "900000030357",
+    "PRODUCT_ID": "P0000002",
+    "CITY_ID": "320600",
+    "CITY_NAME": "南通市",
+    "WX_APP_ID": "wx3ac640b0cf1a6177",
+    "APP_ID": "A000000000000024",
+    "FRONT_TEXT": "smt_yqb_",
+    "pafType": [
+      "LW",
+      "LE",
+      "P",
+      "LG",
+      "F",
+      "O",
+      "L"
+    ],
+    "statusBarColor": "#4b89dc",
+    "statusBarVisibility": "0",
+    "toolBarColor": "#4b89dc",
+    "toolBarVisibility": "0"
+  },
+  "paGoodDoctorConfig": {
+    "detail": {
+      "detail": "平安好医生(H5)",
+      "detail_needInit": "是否需要初始化, 0:不需要，1:需要",
+      "detail_toolBarColor": "标题栏颜色",
+      "detail_toolBarVisibility": "h5界面是否显示标题栏, 0:GONE, 1:VISIBLE",
+      "detail_statusBarColor": "状态栏颜色",
+      "detail_statusBarVisibility": "h5界面是否显示状态栏, 0:GONE, 1:VISIBLE, 2:FOLLOWING",
+      "detail_appId": "",
+      "detail_failRedirect": "",
+      "detail_redirectCode": "",
+      "detail_healthFailUrlProduct": "错误页地址(已转码),也可更换为我们自己的错误页地址",
+      "detail_healthFailUrlBeta": "错误页地址(已转码),也可更换为我们自己的错误页地址",
+      "detail_healthHostUrlProduct": "主机地址Product",
+      "detail_healthHostUrlBeta": "主机地址Beta"
+    },
+    "needInit": "1",
+    "appId": "9224221",
+    "failRedirect": "true",
+    "redirectCode": "0120001",
+    "healthFailUrlProduct": "https://www.jk.cn/ylx-portal/error.html?type=network&biz=SMT",
+    "healthFailUrlBeta": "https://www.test.pajk.cn/ylx-portal/error.html?type=network&biz=NTSMT",
+    "healthHostUrlProduct": "https://www.jk.cn/",
+    "healthHostUrlBeta": "https://test.pajk.cn/",
+    "statusBarColor": "#4b89dc",
+    "statusBarVisibility": "0",
+    "toolBarColor": "#4b89dc",
+    "toolBarVisibility": "0"
+  },
+  "faceConfig": {
+    "detail": {
+      "detail": "人脸",
+      "detail_needInit": "是否需要初始化, 0:不需要，1:需要",
+      "detail_FACE_COMPARE": "认证对比",
+      "detail_FACE_COMPARISON": "人脸对比（对比当前人脸 和 实名认证的人脸是否匹配）",
+      "detail_faceComparisonUrl": "人脸登录",
+      "detail_FACE_OPEN_OR_OVERRIDE": "人脸实名认证之后开通或者覆盖人脸",
+      "detail_FACE_REGISTER": "注册人脸",
+      "detial_verifyOpenFaceUrl": "人脸开通验证码校验",
+      "detail_resetFaceUrl": "重置人脸",
+      "detail_getOpenfaceStateByMobile": "根据手机号获取人脸",
+      "detail_registerFaceUrl": "注册人脸"
+    },
+    "needInit": "1",
+    "FACE_COMPARE": "zuul-service/platform/face/faceAndIdComparison",
+    "FACE_COMPARISON": "nantongsmt/pinganFace/faceCertificationComparison.do",
+    "faceComparisonUrl": "zuul-service/platform/pinganFace/faceComparison",
+    "FACE_OPEN_OR_OVERRIDE": "zuul-service/platform/pinganFace/openFaceCertificationLogin",
+    "FACE_REGISTER": "zuul-service/platform/pinganFace/registerFace",
+    "verifyOpenFaceUrl": "zuul-service/platform/user/verifyOpenFace",
+    "resetFaceUrl": "zuul-service/platform/pinganFace/resetFace",
+    "getOpenfaceStateByMobileUrl": "zuul-service/platform/pinganFace/getOpenfaceStateByMobile",
+    "registerFaceUrl": "zuul-service/platform/pinganFace/registerFace"
+  },
+  "certificationConfig": {
+    "detail": {
+      "detail": "认证",
+      "detail_needInit": "是否需要初始化, 0:不需要，1:需要",
+      "detail_CERTIFICATION_NUMBER": "人脸校验识别次数",
+      "detail_VERIFY_BANK_CARD": "银行卡实名认证",
+      "detail_SEND_CERTIFICATION_CODE": "实名认证发送短信验证码",
+      "detail_CERTIFICATION_COMPLETE": "银行卡实名认证确认"
+    },
+    "needInit": "1",
+    "checkCertificationUrl": "zuul-service/platform/face/checkCertification",
+    "byBankUrl": "zuul-service/platform/byBank",
+    "sendVerifyCodeUrl": "zuul-service/platform/user/sendVerifyCode",
+    "confirmByBankUrl": "zuul-service/platform/confirmByBank"
+  },
+  "loginConfig": {
+    "detail": {
+      "detail": "登录",
+      "detail_needInit": "是否需要初始化, 0:不需要，1:需要",
+      "detail_SEND_VERIFY_CODE": "发送验证码",
+      "detail_OTP_LOGIN": "OTP登录",
+      "detail_IS_OPEN_FACE": "根据手机号获取用户信息",
+      "detail_LOGIN_BY_TOKEN": "临时token登陆"
+    },
+    "needInit": "1",
+    "sendVerifyCodeUrl": "platform/user/sendVerifyCode",
+    "mobileLoginUrl": "platform/user/mobileLogin",
+    "IS_OPEN_FACE": "zuul-service/platform/pinganFace/getOpenfaceStateByMobile",
+    "loginByAuthorizationCode": "zuul-service/platform/env/loginByShortToken"
+  }
+}

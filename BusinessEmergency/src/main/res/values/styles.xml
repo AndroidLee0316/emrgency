@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="emergency_cb_emergency_type">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">@dimen/dp_12.0</item>
+        <item name="android:paddingRight">@dimen/dp_12.0</item>
+        <item name="android:paddingTop">@dimen/dp_4.0</item>
+        <item name="android:paddingBottom">@dimen/dp_4.0</item>
+        <item name="android:button">@null</item>
+        <item name="android:background">@drawable/emergency_selector_emer_type</item>
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:gravity">center</item>
+        <item name="android:minWidth">@dimen/dp_95.0</item>
+        <item name="android:textColor">@color/emergency_selector_emer_type</item>
+        <item name="android:layout_marginBottom">@dimen/dp_18.0</item>
+    </style>
+
+</resources>

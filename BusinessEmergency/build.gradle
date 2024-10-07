@@ -1,0 +1,52 @@
+apply plugin: 'com.android.library'
+apply from: 'uploadArchives.gradle'
+
+android {
+    compileSdkVersion COMPILE_SDK_VERSION
+
+    defaultConfig {
+        minSdkVersion minSdkVersion
+        targetSdkVersion TARGET_SDK_VERSION
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        //ARouter
+        javaCompileOptions {
+            annotationProcessorOptions {
+                // 数据库与路由的配置
+                arguments = [targetModuleName: project.getName(), moduleName: project.getName()]
+                arguments = [AROUTER_MODULE_NAME: project.getName(), AROUTER_GENERATE_DOC: "enable"]
+            }
+        }
+
+    }
+
+    buildTypes {
+        release {
+            postprocessing {
+                removeUnusedCode false
+                removeUnusedResources false
+                obfuscate false
+                optimizeCode false
+                proguardFile 'proguard-rules.pro'
+            }
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    api fileTree(dir: 'libs', include: ['*.jar'])
+    api LIB_FLEXBOX
+    api LIB_ROUTER
+    api LIB_WIDGET
+    api LIB_BASE
+    api LIB_LBS
+    api BUSINESS_NEARBY_LIFE
+    annotationProcessor COMPILER_AROUTER
+}

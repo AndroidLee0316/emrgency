@@ -1,0 +1,277 @@
+[
+  {
+    "type": "container-oneColumn",
+    "items": [
+      {
+        "id": "personal_header",
+        "type": "component-personalHeader",
+        "loginDesc": "欢迎登录市民通基线版"
+      }
+    ]
+  },
+  {
+    "type": "container-oneColumn",
+    "items": [
+      {
+        "type": "component-horizontalDivider",
+        "pageHeight": 8,
+        "bgColor": "#f2f6f9"
+      }
+    ]
+  },
+  {
+    "type": "container-threeColumn",
+    "items": [
+      {
+        "type": "component-topIconBottomText",
+        "iconUrl": "res://business_mine_ic_my_msg",
+        "iconWidth": 30,
+        "iconHeight": 30,
+        "title": "我的关注",
+        "isNeedLogin": true,
+        "showRedDot": true,
+        "onClick": "event://GoToMyFollow",
+        "onClickEventId": "wd",
+        "onClickEventParams": {
+          "服务名称": "我的关注"
+        }
+      },
+      {
+        "type": "component-topIconBottomText",
+        "iconUrl": "res://business_mine_ic_my_msg",
+        "iconWidth": 30,
+        "iconHeight": 30,
+        "title": "我的关注",
+        "isNeedLogin": true,
+        "showRedDot": true,
+        "onClick": "event://GoToMyFollow",
+        "onClickEventId": "wd",
+        "onClickEventParams": {
+          "服务名称": "我的关注"
+        }
+      },
+      {
+        "type": "component-topIconBottomText",
+        "iconUrl": "res://business_mine_ic_my_msg",
+        "iconWidth": 30,
+        "iconHeight": 30,
+        "title": "我的关注",
+        "isNeedLogin": true,
+        "showRedDot": true,
+        "onClick": "event://GoToMyFollow",
+        "onClickEventId": "wd",
+        "onClickEventParams": {
+          "服务名称": "我的关注"
+        }
+      }
+    ]
+  },
+  {
+    "type": "container-oneColumn",
+    "items": [
+      {
+        "type": "component-horizontalDivider",
+        "pageHeight": 8,
+        "bgColor": "#f2f6f9"
+      }
+    ]
+  },
+  {
+    "type": "container-oneColumn",
+    "items": [
+      {
+        "type": "component-mineCardHeader",
+        "title": "我的卡包",
+        "showArrow": true,
+        "isNeedLogin": true,
+        "textStyle": "bold",
+        "showBottomDivider": true,
+        "arrowUrl": "res://business_mine_ic_user_head_arrow",
+        "desc": "3张",
+        "onClick": "event://GoToMyCard",
+        "onClickEventId": "wd",
+        "onClickEventParams": {
+          "服务名称": "我的卡包"
+        }
+      }
+    ]
+  },
+  {
+    "type": "container-oneColumn",
+    "items": [
+      {
+        "type": "container-myCard",
+        "id": "personal_my_card",
+        "pageWidth": 292,
+        "pageHeight": 122,
+        "hGap": 3,
+        "scrollMarginLeft": 9,
+        "scrollMarginRight": 9,
+        "scrollMarginBottom": 12,
+        "hasIndicator": false,
+        "itemRatio": 2.393
+      }
+    ]
+  },
+  {
+    "type": "container-oneColumn",
+    "items": [
+      {
+        "type": "component-horizontalDivider",
+        "pageHeight": 8,
+        "bgColor": "#f2f6f9"
+      }
+    ]
+  },
+  {
+    "type": "container-oneColumn",
+    "items": [
+      {
+        "type": "component-mineCardHeader",
+        "divider": false,
+        "title": "我的服务",
+        "textStyle": "bold",
+        "arrowUrl": "res://business_mine_ic_user_head_arrow",
+        "showArrow": true,
+        "showBottomDivider": true,
+        "iconUrl": "res://ic_main_page_title_my_affairs",
+        "desc": "全部服务"
+      }
+    ]
+  },
+  {
+    "type": "container-fourColumn",
+    "items": [
+      {
+        "type": "component-topIconBottomText",
+        "iconUrl": "res://mine_business_ic_my_register",
+        "iconWidth": 30,
+        "iconHeight": 30,
+        "title": "我的挂号",
+        "isNeedLogin": true,
+        "onClick": "event://GoToMyRegister",
+        "onClickEventId": "wd",
+        "onClickEventParams": {
+          "服务名称": "我的挂号"
+        }
+      },
+      {
+        "type": "component-topIconBottomText",
+        "iconUrl": "res://mine_business_ic_my_pay",
+        "iconWidth": 30,
+        "iconHeight": 30,
+        "title": "我的缴费",
+        "isNeedLogin": true,
+        "onClick": "event://GoToMyPay",
+        "onClickEventId": "wd",
+        "onClickEventParams": {
+          "服务名称": "我的业务"
+        }
+      },
+      {
+        "type": "component-topIconBottomText",
+        "iconUrl": "res://mine_business_ic_my_work",
+        "iconWidth": 30,
+        "iconHeight": 30,
+        "title": "我的办事",
+        "isNeedLogin": true,
+        "onClick": "event://GoToMyAffair",
+        "onClickEventId": "wd",
+        "onClickEventParams": {
+          "服务名称": "我的办事"
+        }
+      },
+      {
+        "type": "component-topIconBottomText",
+        "iconUrl": "res://mine_business_ic_my_follow",
+        "iconWidth": 30,
+        "iconHeight": 30,
+        "title": "我的关注",
+        "isNeedLogin": true,
+        "onClick": "event://GoToMyFollow",
+        "onClickEventId": "wd",
+        "onClickEventParams": {
+          "服务名称": "我的关注"
+        }
+      }
+    ]
+  },
+  {
+    "type": "container-oneColumn",
+    "items": [
+      {
+        "type": "component-horizontalDivider",
+        "pageHeight": 8,
+        "bgColor": "#f2f6f9"
+      }
+    ]
+  },
+  {
+    "type": "container-oneColumn",
+    "items": [
+      {
+        "type": "component-settingItem",
+        "title": "邀请有礼",
+        "desc": "iPhone X大奖等你来拿",
+        "iconUrl": "",
+        "iconWidth": 22,
+        "iconHeight": 22,
+        "showBottomDivider": true,
+        "onClick": "https://smt-web-stg.pingan.com.cn:10443/nantong/information/3/3996",
+        "onClickEventId": "wd",
+        "onClickEventParams": {
+          "服务名称": "邀请有礼"
+        }
+      }
+    ]
+  },
+  {
+    "type": "container-oneColumn",
+    "items": [
+      {
+        "type": "component-settingItem",
+        "title": "推荐APP",
+        "desc": "",
+        "iconUrl": "",
+        "iconWidth": 22,
+        "iconHeight": 22,
+        "showBottomDivider": true,
+        "isNeedLogin": true,
+        "onClick": "https://smt-stg.pingan.com.cn/changshu/app/feature/recommend/#/qrcode",
+        "onClickEventId": "wd",
+        "onClickEventParams": {
+          "服务名称": "推荐APP"
+        }
+      }
+    ]
+  },
+  {
+    "type": "container-oneColumn",
+    "items": [
+      {
+        "type": "component-settingItem",
+        "title": "去好评",
+        "desc": "",
+        "iconUrl": "",
+        "iconWidth": 22,
+        "iconHeight": 22,
+        "showBottomDivider": false,
+        "onClick": "event://GoToPraise",
+        "onClickEventId": "wd",
+        "onClickEventParams": {
+          "服务名称": "去好评"
+        }
+      }
+    ]
+  },
+  {
+    "type": "container-oneColumn",
+    "items": [
+      {
+        "type": "component-horizontalDivider",
+        "pageHeight": 8,
+        "bgColor": "#f2f6f9"
+      }
+    ]
+  }
+]
